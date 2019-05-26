@@ -17,3 +17,15 @@ var generateTargetNum = () => {
 var generatePlayerNum = () => {
     return Math.ceil(Math.random() * 12);
 };
+
+var intializeGame = () => {
+    target = generateTargetNum();
+    stephCurry = generatePlayerNum();
+    kevinDurant = generatePlayerNum();
+    klayThompson = generatePlayerNum();
+    draymondGreen = generatePlayerNum();
+};
+
+initializeGame();
+console.log(target);
+console.log(stephCurry,klayThompson,kevinDurant,draymondGreen);
