@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <title>Dubs Challenge</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/reset.css">
+    </head>
+    
+    <body>
+        
+        <h1>
+            <img src="./assets/images/warriors-thumbnail.svg" alt="warriors-thumbnail" id="warriors-thumb"> Dubs Challenge <img src="./assets/images/warriors-thumbnail.svg" alt="warriors-thumbnail" id="warriors-thumb">
+        </h1>
+
+        <div id="instructions">
+            <p>
+                You will be given a random number at the start of the game.
+            </p>
+            <p>
+                There are four players below. By clicking on them you will add a specific amount of point to your total score. 
+            </p>
+            <p>
+                You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.
+            </p> 
+            <p>
+                The value of each player is hidden from you until clicked on.
+            </p> 
+            <p>
+                Each time the game starts, the game will change the value of each player.
+            </p>
+        </div>
+
+        <div id="score-counter">
+            <h3 id="score">
+
+            </h3>
+            <h3 id="current-score">
+
+            </h3>
+            <h3 id="wins">
+
+            </h3>
+            <h3 id="losses">
+
+            </h3>
+        </div>
+
+        <div class="player_images">
+            <img src="./assets/images/curry.jpg" alt="Steph Curry" id="SC">
+            <img src="./assets/images/kevindurant.jpg" alt="Kevin Durant" id="KD">
+            <img src="./assets/images/klay.jpg" alt="Klay Thompson" id="KT">
+            <img src="./assets/images/draymond.jpg" alt="Draymond Green" id="DG">
+        </div>
+        
+        <script src="./assets/javascript/game.js"></script>
+    
+    </body>
+
+</html>
