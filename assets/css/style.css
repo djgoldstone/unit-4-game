@@ -1,0 +1,29 @@
+body {
+    background-image: url("../images/warriors-background.jpg");
+    background-size: cover;
+    color: white;
+}
+img {
+    height: 200px;
+}
+h1 {
+    color: yellow;
+}
+#warriors-thumb {
+    height: 40px;
+    width: 40px;
+}
+#instructions {
+    background-color: blue;
+    color: yellow;
+    font-size: 14px;
+    width: 40%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#score-counter {
+    background-color: blue;
+    color: yellow;
+    width: 15%;
+    padding-left: 5px;
+}
