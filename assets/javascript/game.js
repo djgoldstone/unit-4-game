@@ -14,7 +14,7 @@ var losses = 0;
 
 
 var generateTargetNum = () => {
-    return Math.ceil(Math.random() * (120-19)) + 19;
+    return Math.ceil(Math.random() * (120 - 19)) + 19;
 };
 //function that generates a random number from 19-120 which will serve as the target number user will have to reach without exceeding in order to register a win
 
@@ -23,7 +23,7 @@ var generatePlayerNum = () => {
 };
 //function that generates a random number from 1-12 which will be assigned to each character individually at the beginning of each turn
 
-var intializeGame = () => {
+var initializeGame = () => {
     target = generateTargetNum();
     stephCurry = generatePlayerNum();
     kevinDurant = generatePlayerNum();
@@ -51,18 +51,26 @@ var updateWins = () => {
 };
 //function that utilizes JQuery to display/update wins/losses variables on DOM at their respective div id's
 
+var resetGame = () => {
+    currentScore = 0;
+    initializeGame();
+};
+//function that resets score to 0 and resets the game by calling initializeGame with a new random target score and randomly generated player values
+
 var checkScore = () => {
     if (currentScore > target) {
         alert("You lose!");
         losses++;
         updateWins();
+        resetGame();
     } else if (currentScore === target) {
         alert("You win!");
         wins++;
         updateWins();
+        resetGame();
     }
 };
-//function that determines if a player has won or lost depending on the comparison of the currentScore variable to the target number variable, player will be notified with alert depending on outcome and a win or loss will be incremented to the corresponding variable
+//function that determines if a player has won or lost depending on the comparison of the currentScore variable to the target number variable, player will be notified with alert depending on outcome, a win or loss will be incremented to the corresponding variable, and the resetGame function will be called re-initializing the game and setting the score to 0.
 
 
 $("#SC").on("click", function() {
