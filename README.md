@@ -13,6 +13,7 @@ ___
 * JavaScript
 * JQuery
 
+![Graph](assets/images/graph.png)
 ___
 
 ![Index Page](assets/images/dubs-challenge-screenshot.png)
