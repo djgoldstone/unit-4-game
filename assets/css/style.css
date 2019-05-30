@@ -4,9 +4,11 @@ body {
 }
 img {
     height: 200px;
+    width: 250px;
 }
 h1 {
     color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #warriors-thumb {
     height: 40px;
@@ -17,12 +19,28 @@ h1 {
     color: yellow;
     font-size: 14px;
     width: 40%;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #score-counter {
     background-color: blue;
     color: yellow;
     width: 15%;
     padding-left: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+@media (max-width: 540px) {
+    h1 {
+        font-size: 16px;
+    } 
+    p {
+        font-size: 10px;
+    }
+    .player_images {
+        height: 100px;
+        width: 125px;
+    }
+    #score-counter {
+        font-size: 14px;
+    }
+  }
